@@ -1,0 +1,38 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#form{
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 30px;
+    height: auto;
+    background-color: rgb(32, 223, 159);
+}
+#dados-pessoais{
+    margin-bottom: 30px;
+}
+input:not(#btt){
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+}
+#btt{
+    display: block;
+    margin: auto;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    font-weight: bold;
+    background-color: #00008b;
+    color: #fff;
+}

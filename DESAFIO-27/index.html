@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.0.js"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/mascara.js"></script>
+    <script src="js/viacep.js"></script>
+    <script src="js/script.js"></script>
+    <title>Desafio 27</title>
+</head>
+<body>
+    
+    <div id="form">
+            <div id="dados-pessoais">
+                <div><label>Nome</label></div>
+                <div><input type="text" id="nome" checked></div>
+
+                <div><label>Sobrenome</label></div>
+                <div><input type="text" id="sobrenome" checked></div>
+
+                <div><label>E-mail</label></div>
+                <div><input type="email" id="email" checked></div>
+            </div>
+
+            <div>
+                <div><label>CEP</label></div>
+                <div><input type="text" id="i_cep" placeholder="00000-000" onblur="pesquisa_cep(this.value)"></div>
+
+                <div><label>Rua</label></div>
+                <div><input type="text" id="i_rua"></div>
+
+                <div><label>Bairro</label></div>
+                <div><input type="text" id="i_bairro"></div>
+
+                <div><label>Cidade</label></div>
+                <div><input type="text" id="i_cidade"></div>
+
+                <div><label>Estado</label></div>
+                <div><input type="text" id="i_estado"></div>
+            </div>
+
+        <input type="submit" value="Cadastrar" id="btt" onclick="preencher()">
+
+    </div>
+
+</body>
+</html>
